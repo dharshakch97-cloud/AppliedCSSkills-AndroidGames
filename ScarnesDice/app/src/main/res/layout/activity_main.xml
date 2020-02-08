@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your turn score will display here!"
+        android:id="@+id/textview1"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/dice1"
+        android:id="@+id/image_view"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textview1"/>
+
+    <LinearLayout
+        android:id="@+id/llayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_view"
+        android:layout_marginTop="41dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button1_roll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:onClick="roll"
+            android:text="ROLL" />
+
+        <Button
+            android:id="@+id/button2_hold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:onClick="hold"
+            android:text="HOLD" />
+
+        <Button
+            android:id="@+id/button3_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:onClick="reset"
+            android:text="RESET" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your overall score will display here!"
+        android:id="@+id/textview2"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/llayout"/>
+</RelativeLayout>
+<!--    tools:context="com.example.scarnes_dice.MainActivity">-->
